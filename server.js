@@ -12,9 +12,9 @@ app.use(express.static('public')); // Serve files in 'public' statically
 app.use(express.urlencoded({extended : true}))
 app.use(express.json());
 
-// app.get("/" , (req , res)=>{
-//     return res.send("<h1>hello world from jaydip</h1>")
-// })
+app.get("/demo" , (req , res)=>{
+    return res.send("<h1>hello world from jaydip</h1>")
+})
 app.listen(3000, () => {
     console.log("SERVER IS STARTING ON PORT : 3000 🚀");
 });
